@@ -38,8 +38,6 @@ const Header = () => {
         <Button className='rounded-pill btn-sm py-2 px-4 fs-sm fw-bold btn-gadient' >Request Invite</Button>
       </Container>
     </Navbar>
-
-    
     </>
     )
 }
