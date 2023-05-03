@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root{
+    --clr-pr-db : hsl(233, 26%, 24%);
+    --clr-pr-lg : hsl(136, 65%, 51%);
+    --clr-pr-bc : hsl(192, 70%, 51%);
+    --clr-n-gb : hsl(233, 8%, 62%);
+    --clr-n-lgb : hsl(220, 16%, 96%);
+    --clr-n-vlg : hsl(0, 0%, 98%);
+    --clr-n-w : hsl(0, 0%, 100%);
+    --l-pri-g : linear-gradient(to right, var(--clr-pr-bc), var(--clr-pr-lg))
+}
+
+*{
+    font-family: 'Public Sans', sans-serif;
+}
+
+// body font size 18px
+
+
+.btn-gadient {
+    background-image: var(--l-pri-g)!important;
+
+    &:hover{
+        background-image: var(--l-pri-g)!important;
+        opacity: 0.75;
+    }
+}
+
+.py-2{
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+.px-4{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.fs-sm{
+    font-size: 0.85rem !important;
+}
+

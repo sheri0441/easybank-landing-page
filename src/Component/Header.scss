@@ -1,0 +1,19 @@
+.btn-primary {
+    --bs-btn-border-color: none;
+    --bs-btn-hover-border-color: none;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    @media (min-width:992px) {
+        font-size: 0.85rem;
+    }
+
+}
+
+svg{
+    width: 140px;
+    height: 20px;
+}
+
+
