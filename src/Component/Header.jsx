@@ -17,7 +17,7 @@ const Header = () => {
         <header>
         <Navbar bg="light" expand="lg" className='fixed-top z-5 bg-white' id='header_container' style={{zIndex:'99'}}>
         <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <svg>
                     <use href='#logo'></use>
                 </svg>
