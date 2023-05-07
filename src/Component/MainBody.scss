@@ -1,0 +1,50 @@
+// Hero section Custom Styling 
+
+#heroSec{
+    @media (min-width:992px) {
+        position: relative;
+    }
+}
+
+#heroSecImage{
+    background-image: url('../assets/images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    @media (min-width:992px) {
+        background-image: url('../assets/images/bg-intro-desktop.svg');
+        position: absolute;
+        right: -25%;
+        top: 0%;
+        width: 80%;
+        overflow: hidden;
+        max-width: 900px;
+    }
+}
+
+#heroText{
+    @media (min-width:992px) {
+        width: 50%;
+        text-align: left !important;
+        max-width: 440px;
+        margin-top: 250px !important;
+        padding-bottom: 170px !important;
+    }
+}
+
+
+// Why Section custom Styling 
+
+#whySec{
+    @media (min-width:992px) {
+        padding: 100px 0 !important;
+
+    }
+}
+
+#whySec_heading{
+    @media (min-width:992px) {
+    text-align: left !important;
+    width: 50% !important;
+    }
+}

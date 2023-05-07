@@ -1,0 +1,18 @@
+
+.cus_card{
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+        .card-title{
+            color: var(--clr-pr-lg);
+        }
+    }
+    img{
+        height: 185px;
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+        @media (min-width:992px) {
+            height: 256px;
+        }
+    }
+}

@@ -2,13 +2,15 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Component/Header';
-import SVG from './Component/SVGs';
+import Main from './Component/MainBody';
+import Footer from './Component/Footer';
 
 function App() {
   return (
     <div>
      <Header />
-     <SVG/>
+     <Main />
+     <Footer />
     </div>
   );
 }

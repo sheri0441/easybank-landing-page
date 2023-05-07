@@ -1,0 +1,46 @@
+footer{
+    text-align: center;
+    @media (min-width:992px) {
+        text-align: left;
+    }
+
+    .container div:last-child{
+        @media (min-width:992px) {
+            text-align: right;
+        }
+    }
+    
+    ul{
+        @media (min-width:992px) {
+            margin-left: 130px;
+        }
+    }
+    .nav-item{
+        color: var(--clr-n-w);
+        &:hover{
+            color: var(--clr-pr-lg);
+        }
+    }
+
+    .nav-link{
+        @media (min-width:992px) {
+            padding-top: 0 !important;
+        }
+    }
+
+}
+
+#social-link{
+    svg{
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        fill: var(--clr-n-w ) ;
+        &:hover{
+            fill: var(--clr-pr-lg) !important;
+        }
+    }
+    svg + svg{
+        margin-left: 1rem;
+    }
+}

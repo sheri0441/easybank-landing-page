@@ -1,0 +1,14 @@
+
+.cardDesktop{
+    @media (min-width:992px) {
+        text-align: left !important;
+        margin-inline: 0 !important;
+
+    }
+
+    svg{
+        @media (min-width:992px) {
+            margin-left: 0% !important;
+        }
+    }
+}

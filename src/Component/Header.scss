@@ -3,17 +3,122 @@
     --bs-btn-hover-border-color: none;
 }
 
-.nav-link {
-    font-size: 1.125rem;
-    @media (min-width:992px) {
-        font-size: 0.85rem;
+#header_nav {
+        display: none;
+        position: absolute;
+        top: 5.5rem;
+        left: 50%;
+        background-color: var(--clr-n-w);
+        width: 80%;
+        text-align: center;
+        padding: 1.5rem 0;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.27);
+        -moz-box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.27);
+        box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.27);
+        
+
+    .nav-link {
+        font-size: 1.125rem;
+        color: var(--clr-pr-db);
+        @media (min-width:992px) {
+            font-size: 0.85rem;
+            position: relative;
+            padding: 1.5rem 0;
+            color: var(--clr-n-gb);
+            &:hover{
+                color: var(--clr-pr-db);
+            }
+            &::after{
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 0%;
+            height: 3px;
+            width: 0%;
+            background-image: var(--l-pri-g);
+            transition: all 0.25s ease-in-out;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+        }
     }
 
+    @media (min-width:992px) {
+        display: flex;
+        position:static;
+        transform: none;
+        background-color: transparent;
+        width: auto;
+        text-align: center;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+} 
+
+.openNav + #modal{
+        display: block !important;
+        width: 100vw;
+        height: 100vw;
+        background-image: var(--modal-bg);
+        z-index: -1;  
+
+        @media (min-width:992px) {
+            display: none !important;
+        }
 }
 
-svg{
-    width: 140px;
-    height: 20px;
+
+.openNav .container{
+    @media (max-width:992px) {
+        #header_nav{
+            display: flex;
+            animation: navdrop 0.5s ease-in-out forwards;
+    
+            @keyframes navdrop {
+                0%{
+                    opacity: 0;
+                    transform: translate(-50%, -10%);
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    transform: translate(-50%, 0%)
+                }
+            }
+        }
+    }
+
+    .menu_toggle{
+        #menu{
+            display: none;
+        }
+        #close{
+            display: block;
+        }
+    }
 }
 
+.menu_toggle{
+    svg{
+        width: 1rem;
+        height: 1rem;
+        fill: var(--clr-pr-db);
+    }
+    #menu{
+        display: block;
+    }
+    #close{
+        display: none;
+    }
+}
 
+.navbar-brand{
+    svg{
+        width: 140px;
+        height: 20px;
+    }
+} 
